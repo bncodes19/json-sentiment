@@ -13,3 +13,16 @@ To be submitted for credit, all changes must be committed and pushed to this rep
 * (Question 3) Song lyrics retrieved and stored in separate files (0.5 pts/song): 2 pts
 * (Question 4) Polarity scores printed (with appropriate label containing song title, .25 pts/song): 1 pt
 * (Question 4) Questions answered thoughtfully: 2 pts
+
+
+## Dependencies
+The requirements.txt file includes:
+spacytextblob
+requests
+spacy
+
+This project also uses requests and json, but those packages do not need to be installed via requirements.txt as they are part of Python's standard library as a built-in module.
+
+# TODO: write steps on this:
+Spacy may need to be downloaded separately ...
+python -m spacy download en_core_web_sm
