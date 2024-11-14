@@ -16,13 +16,26 @@ To be submitted for credit, all changes must be committed and pushed to this rep
 
 
 ## Dependencies
-The requirements.txt file includes:
+This project requires a few libraries that must be downloaded. These are: **spacy, spacytextblob, and requests**
+
+Store these libraries in the requirements.txt file in the project repository:
+```
+spacy
 spacytextblob
 requests
-spacy
+```
 
-This project also uses requests and json, but those packages do not need to be installed via requirements.txt as they are part of Python's standard library as a built-in module.
+Next, install the packages in the terminal with:
+```
+python3 -m pip install -r requirements.text
+```
+Then freeze the requirements.txt file:
+```
+python3 -m pip freeze > requirements.txt
+```
+An additional step is required after installing these libraries to download a model from spacy. This command can be run in the terminal:
+```
+python3 -m spacy download en_core_web_sm
+```
 
-# TODO: write steps on this:
-Spacy may need to be downloaded separately ...
-python -m spacy download en_core_web_sm
+This project also uses **json**, but this library do not need to be installed via requirements.txt as they are part of Python's standard library as a built-in module.
